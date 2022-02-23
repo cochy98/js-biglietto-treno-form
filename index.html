@@ -35,24 +35,24 @@
                 <div class="offset-1 col-10 px-5 py-4 text-center bg-white">
                     <div class="row">
                         <div class="col-4 px-5 mb-5">
-                            <label for="namePassenger" class="form-label">Nome Cognome</label>
-                            <input type="text" id="namePassenger" class="form-control">
+                            <label for="name-passenger" class="form-label">Nome Cognome</label>
+                            <input type="text" id="name-passenger" class="form-control">
                         </div>
                         <div class="col-4 px-5 mb-5">
-                            <label for="maxKm" class="form-label">Km da percorrere</label>
-                            <input type="text" id="maxKm" class="form-control">
+                            <label for="number-km" class="form-label">Km da percorrere</label>
+                            <input type="text" id="number-km" class="form-control">
                         </div>
                         <div class="col-4 px-5 mb-5">
-                            <label for="eta" class="form-label">Fascia d'età</label>
-                            <select id="eta" class="form-select">
-                                <option value="1">Minorenne</option>
-                                <option value="2">Over 65</option>
+                            <label for="eta-passenger" class="form-label">Fascia d'età</label>
+                            <select id="eta-passenger" class="form-select">
+                                <option value="minorenne">Minorenne</option>
+                                <option value="over65">Over 65</option>
                             </select>
                         </div>
                         
                         <div class="col-12">
-                            <button class="btn my-btn">Genera</button>
-                            <button class="btn my-btn">Annulla</button>
+                            <button type="submit" id="btn-success" class="btn my-btn">Genera</button>
+                            <button type="reset" class="btn my-btn">Annulla</button>
                         </div>
                     </div>
                 </div>
@@ -65,23 +65,28 @@
                 <div class="offset-1 col-10 p-5 bg-white">
                     <div class="row">
                         <div class="col-12">
-                            <h3 class="text-uppercase fw-bold">Dettaglio passeggeri</h3>
+                            <h4 class="text-uppercase fw-bold">Dettaglio passeggeri</h4>
                         </div>
-                        <div class="col-12 hr"></div>                        
-                        <div class="col-4">
-                            <h6 class="text-uppercase">Nome passeggero</h6>
+                        <div class="col-12 hr mb-3"></div>                        
+                        <div class="col-3">
+                            <h6 class="text-uppercase mb-5">Nome passeggero</h6>
+                            <p id="user-name" class="fw-bold"></p>
                         </div>
-                        <div class="col-2">
-                            <h6>Offerta</h6>
-                        </div>
-                        <div class="col-2">
-                            <h6>Carrozza</h6>
-                        </div>
-                        <div class="col-2">
-                            <h6>Codice CP</h6>
+                        <div class="col-3">
+                            <h6 class="mb-5">Offerta</h6>
+                            <p id="offer"></p>
                         </div>
                         <div class="col-2">
-                            <h6>Costo biglietto</h6>
+                            <h6 class="mb-5">Carrozza</h6>
+                            <p id="carrozza"></p>
+                        </div>
+                        <div class="col-2">
+                            <h6 class="mb-5">Codice CP</h6>
+                            <p id="cod"></p>
+                        </div>
+                        <div class="col-2">
+                            <h6 class="mb-5">Costo biglietto</h6>
+                            <p id="price"></p>
                         </div>
                         <div class="col-12 hr"></div> 
                     </div>
