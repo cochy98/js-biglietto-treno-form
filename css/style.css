@@ -11,6 +11,20 @@ h1, h6{
     font-weight: bold;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:first-child{
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+
 form label{
     color: #b91450;
 }

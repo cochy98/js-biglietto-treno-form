@@ -45,11 +45,25 @@ userButton.addEventListener('click', function(){
     console.log(message);
 
     // Visualizzo nel body
-    document.getElementById('user-name').innerHTML = userNamePassenger.value;
-    document.getElementById('offer').innerHTML = "Biglietto Standard";
-    document.getElementById('carrozza').innerHTML = "5";
-    document.getElementById('cod').innerHTML = "92911";
-    document.getElementById('price').innerHTML = priceTicket.value;
+    let liUserName = document.createElement("li");
+    liUserName.innerHTML = `<p>${userNamePassenger.value}</p>`
+    document.getElementById('user-name').append(liUserName);
+
+    let liOffer = document.createElement("li");
+    liOffer.innerHTML = `<p>Biglietto Standard</p>`
+    document.getElementById('offer').append(liOffer);
+
+    let liCarrozza = document.createElement("li");
+    liCarrozza.innerHTML = `<p>5</p>`
+    document.getElementById('carrozza').append(liCarrozza);
+
+    let liCod = document.createElement("li");
+    liCod.innerHTML = `<p>92911</p>`
+    document.getElementById('cod').append(liCod);
+
+    let liPrice = document.createElement("li");
+    liPrice.innerHTML = `<p>${priceTicket}</p>`
+    document.getElementById('price').append(liPrice);
 
     // Resetto gli input
     userNamePassenger.value = "";
