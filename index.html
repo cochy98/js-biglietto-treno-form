@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,30 +18,72 @@
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Javascript 3rd Livecoding</title>
+    <title>Biglietto del treno</title>
 
 </head>
 <body>
 
     <main>
-        <div class="container">
+        <div class="container p-5">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-upper">Calcola il prezzo del tuo biglietto</h1>
+                    <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
                 </div>
+            </div>
+
+            <form class="row mb-4">
+                <div class="offset-1 col-10 px-5 py-4 text-center bg-white">
+                    <div class="row">
+                        <div class="col-4 px-5 mb-5">
+                            <label for="namePassenger" class="form-label">Nome Cognome</label>
+                            <input type="text" id="namePassenger" class="form-control">
+                        </div>
+                        <div class="col-4 px-5 mb-5">
+                            <label for="maxKm" class="form-label">Km da percorrere</label>
+                            <input type="text" id="maxKm" class="form-control">
+                        </div>
+                        <div class="col-4 px-5 mb-5">
+                            <label for="eta" class="form-label">Fascia d'età</label>
+                            <select id="eta" class="form-select">
+                                <option value="1">Minorenne</option>
+                                <option value="2">Over 65</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-12">
+                            <button class="btn my-btn">Genera</button>
+                            <button class="btn my-btn">Annulla</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
                 <div class="col-12">
-                    <div class="col-4">
-                        Nome Cognome
-                    </div>
-                    <div class="col-4">
-                        Km da percorrere
-                    </div>
-                    <div class="col-4">
-                        Fascia d'età
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary">Genera</button>
-                        <button class="btn btn-primary">Annulla</button>
+                    <h1 class="text-center">Il tuo biglietto</h1>
+                </div>
+                <div class="offset-1 col-10 p-5 bg-white">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-uppercase fw-bold">Dettaglio passeggeri</h3>
+                        </div>
+                        <div class="col-12 hr"></div>                        
+                        <div class="col-4">
+                            <h6 class="text-uppercase">Nome passeggero</h6>
+                        </div>
+                        <div class="col-2">
+                            <h6>Offerta</h6>
+                        </div>
+                        <div class="col-2">
+                            <h6>Carrozza</h6>
+                        </div>
+                        <div class="col-2">
+                            <h6>Codice CP</h6>
+                        </div>
+                        <div class="col-2">
+                            <h6>Costo biglietto</h6>
+                        </div>
+                        <div class="col-12 hr"></div> 
                     </div>
                 </div>
             </div>

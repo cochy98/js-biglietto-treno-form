@@ -4,7 +4,35 @@
 
 h1{
     color: white;
-    text-align: center;
     text-transform: uppercase;
+}
+
+h1, h6{
     font-weight: bold;
+}
+
+form label{
+    color: #b91450;
+}
+
+input.form-control,
+select.form-select{
+    border-color: #b91450;
+}
+
+.my-btn{
+    background-color: #cccccc;
+    border-color: #808080;
+    color: #b91450;
+    font-weight: bold;
+}
+
+form.row>div{
+    border-radius: 20px;
+}
+
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: #808080;
 }
